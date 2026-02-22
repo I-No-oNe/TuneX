@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#0a0a0f">
-    <title>GroovePI</title>
+    <title>TuneX</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet">
@@ -1930,7 +1930,7 @@
 
     <!-- Header -->
     <header>
-        <div class="logo">GroovePI</div>
+        <div class="logo">TuneX</div>
         <div class="search-wrap">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <circle cx="11" cy="11" r="8"/>
@@ -2618,7 +2618,7 @@
             document.getElementById('now-title').textContent = d.track.title || track.title;
             document.getElementById('now-thumb').classList.remove('spinning');
             document.getElementById('play-btn').classList.remove('loading');
-            document.title = `${d.track.title} — GroovePI`;
+            document.title = `${d.track.title} — TuneX`;
         } catch (e) {
             document.getElementById('now-title').textContent = '❌ ' + (track.title || 'Failed');
             document.getElementById('play-btn').textContent = '▶';
@@ -2701,7 +2701,7 @@
         if (hasNext) skipTrack(1);
         else {
             document.getElementById('play-btn').textContent = '▶';
-            document.title = 'GroovePI';
+            document.title = 'TuneX';
         }
     });
     audio.addEventListener('pause', () => {
